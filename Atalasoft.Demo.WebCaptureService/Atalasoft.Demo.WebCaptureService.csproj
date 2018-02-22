@@ -212,10 +212,10 @@
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ScanningHandler.ashx.cs">
+    <Compile Include="Handlers\ScanningHandler.ashx.cs">
       <DependentUpon>ScanningHandler.ashx</DependentUpon>
     </Compile>
-    <Compile Include="WDVHandler.ashx.cs">
+    <Compile Include="Handlers\WDVHandler.ashx.cs">
       <DependentUpon>WDVHandler.ashx</DependentUpon>
     </Compile>
   </ItemGroup>
@@ -223,10 +223,10 @@
     <Folder Include="atala-capture-upload\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ScanningHandler.ashx" />
+    <Content Include="Handlers\ScanningHandler.ashx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="WDVHandler.ashx" />
+    <Content Include="Handlers\WDVHandler.ashx" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

@@ -23,14 +23,14 @@ function InitializeWebDocumentViewer() {
     _viewer = new Atalasoft.Controls.WebDocumentViewer({
         parent: $('.atala-document-container'),
         toolbarparent: $('.atala-document-toolbar'),
-        serverurl: 'WDVHandler.ashx',
+        serverurl: 'Handlers/WDVHandler.ashx',
     });
 }
 
 function InitializeWebScanning() {
 
     Atalasoft.Controls.Capture.WebScanning.initialize({
-        handlerUrl: 'ScanningHandler.ashx',
+        handlerUrl: 'Handlers/ScanningHandler.ashx',
         onScanError: function (msg, params) { scanErrorHandler(msg, params); },
         onScanStarted: function (eventName, eventObj) { Started("Scanning Page 1"); },
         onImageAcquired: function (eventName, eventObj) { ImageAcquired(); },
@@ -43,7 +43,7 @@ function InitializeWebScanning() {
             AppendStatus('Upload Completed: ' + eventObj.success);
             if (eventObj.success) {
                 AppendStatus('Document Ready');
-                _viewer.OpenUrl('atala-capture-upload/' + eventObj.documentFilename);
+                _viewer.OpenUrl('../atala-capture-upload/' + eventObj.documentFilename);
             }
         },
         scanningOptions: {

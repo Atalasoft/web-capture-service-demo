@@ -108,32 +108,32 @@ section ul li.right {
 }
 
 .ui-state-default .atala-ui-icon-scan {
-    background-image: url('WebCaptureDemoResources/icons/scanner.png');
+    background-image: url('icons/scanner.png');
 }
 
 .atala-scan-button {
-    background-image: url('WebCaptureDemoResources/icons/scanner.png');
+    background-image: url('icons/scanner.png');
     background-repeat: no-repeat;
     vertical-align: top;
 }
 
 .ui-state-default .atala-ui-icon-select {
-    background-image: url('WebCaptureDemoResources/icons/select.png');
+    background-image: url('icons/select.png');
 }
 
 .atala-select-button {
-    background-image: url('WebCaptureDemoResources/icons/select.png');
+    background-image: url('icons/select.png');
     background-repeat: no-repeat;
     vertical-align: top;
 }
 
 .ui-state-default .atala-ui-icon-VRS {
-    background-image: url('WebCaptureDemoResources/icons/vrs16.png');
+    background-image: url('icons/vrs16.png');
     background-repeat: no-repeat;
 }
 
 .atala-VRS-button {
-    background-image: url('WebCaptureDemoResources/icons/vrs16.png');
+    background-image: url('icons/vrs16.png');
     background-repeat: no-repeat;
     vertical-align: top;
 }
@@ -180,6 +180,6 @@ section ul li.right {
 
 .loadingGif {
     position: absolute;
-    background-image: url('WebCaptureDemoResources/loading.gif');
+    background-image: url('loading.gif');
     background-repeat: no-repeat;
 }
