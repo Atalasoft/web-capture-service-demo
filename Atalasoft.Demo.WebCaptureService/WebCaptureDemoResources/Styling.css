@@ -1,0 +1,185 @@
+﻿/*@charset "UTF-8";*/
+/* RESET */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, font, img, ins, kbd, q, samp, small, strong, sub, sup, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, header, nav, article, aside, footer, hgroup, section {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    text-decoration: none;
+}
+
+:focus, :active {
+    outline: 0;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+header, menu, nav, article, aside, footer, hgroup, section {
+    display: block;
+}
+
+/* TYPOGRAPHY */
+html {
+}
+
+body {
+    max-width: 1000px;
+    margin: 0 auto;
+    font: 14px/18px Arial, Helvetica, sans-serif;
+    text-align: justify;
+    min-width: 1000px;
+}
+
+/* SECTION */
+section {
+    display: inline-block;
+    width: 100%;
+}
+
+background section ul.mainsection {
+    display: inline-block;
+    height: 500px;
+    width: 100%;
+}
+
+section ul li {
+    display: inline-block;
+}
+
+    section ul li.left {
+        float: left;
+        background-color: #A2A2A2;
+    }
+
+    section ul li.middle {
+        min-width: 300px;
+        width: 800px;
+        padding-left: 1%;
+    }
+
+.atala-document-toolbar div {
+    display: inline-block;
+}
+
+.atala-document-container {
+    height: 700px;
+}
+
+section ul li.right {
+    width: 200px;
+    float: right;
+    background-color: #D7D7D7;
+    font-family: Calibri;
+    font-size: 12px;
+}
+
+    section ul li.right ul {
+        height: 500px;
+    }
+
+        section ul li.right ul li {
+            display: list-item;
+            width: 200px;
+            padding-left: 10px;
+        }
+
+    section ul li.right p.docinfo {
+        background-color: #F4AA82;
+        width: 200px;
+        height: 30px;
+        line-height: 30px;
+        text-indent: 10px;
+    }
+
+/* TOOLBAR STYLING */
+
+#undefined_wdv1_toolbar_Label_PageNumber {
+    vertical-align: 35%;
+}
+
+.ui-state-default .atala-ui-icon-rotate {
+    background-image: url('rotate-right.png');
+}
+
+.ui-state-default .atala-ui-icon-scan {
+    background-image: url('WebCaptureDemoResources/icons/scanner.png');
+}
+
+.atala-scan-button {
+    background-image: url('WebCaptureDemoResources/icons/scanner.png');
+    background-repeat: no-repeat;
+    vertical-align: top;
+}
+
+.ui-state-default .atala-ui-icon-select {
+    background-image: url('WebCaptureDemoResources/icons/select.png');
+}
+
+.atala-select-button {
+    background-image: url('WebCaptureDemoResources/icons/select.png');
+    background-repeat: no-repeat;
+    vertical-align: top;
+}
+
+.ui-state-default .atala-ui-icon-VRS {
+    background-image: url('WebCaptureDemoResources/icons/vrs16.png');
+    background-repeat: no-repeat;
+}
+
+.atala-VRS-button {
+    background-image: url('WebCaptureDemoResources/icons/vrs16.png');
+    background-repeat: no-repeat;
+    vertical-align: top;
+}
+
+.WebCaptureToolbar {
+    float: left;
+}
+
+.StatusToolbar {
+    float: right;
+}
+
+#Scan {
+    top: -30px;
+}
+
+.uploadToolbar {
+    width: 60px;
+    height: 24px;
+    overflow: hidden;
+}
+
+.functionalToolbar {
+    padding-left: 5px;
+}
+
+.ui-state-default .atala-ui-icon-upload {
+    background-image: url('open.png');
+}
+
+#FileToUpload {
+    top: -5px;
+    opacity: 0;
+    filter: alpha(opacity=1);
+    left: -28px;
+}
+
+#ButtonUpload {
+    left: -50px;
+    width: 1px;
+    height: 1px;
+    visibility: hidden;
+}
+
+.loadingGif {
+    position: absolute;
+    background-image: url('WebCaptureDemoResources/loading.gif');
+    background-repeat: no-repeat;
+}
