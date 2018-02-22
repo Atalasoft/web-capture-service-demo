@@ -1,6 +1,8 @@
 # Atalasoft DotImage Web Capture Service demo
 Demo application shows basic usage of Web Capture Service with Web Document Viewer components of [DotImage](https://www.atalasoft.com/Products/DotImage) product.
 
+![](https://atalasoft.visualstudio.com/_apis/public/build/definitions/789e0a22-6f04-4fac-91a5-ccc70df2a1f1/10/badge)
+
 ## Description
 
 Web Capture Service includes a set of integrated components that can be used to easily capture-enable a website. It uses Javascript, supported by an local scanning service on the client machine which could be deployed either as windows service or regular windows application
