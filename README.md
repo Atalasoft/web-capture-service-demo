@@ -1,5 +1,5 @@
 # Atalasoft DotImage Web Capture Service demo
-Demo application shows basic usage of Web Capture Service with Web Document Viewer components of [DotImage](https://www.atalasoft.com/Products/DotImage) product.
+Demo application shows basic usage of Web Capture Service with Web Document Viewer components of [DotImage](https://www.atalasoft.com/Products/DotImage) product. Live verions of the demo is hosted on Azure: http://atalasoft-capture-demo.azurewebsites.net/
 
 ![](https://atalasoft.visualstudio.com/_apis/public/build/definitions/789e0a22-6f04-4fac-91a5-ccc70df2a1f1/10/badge)
 
