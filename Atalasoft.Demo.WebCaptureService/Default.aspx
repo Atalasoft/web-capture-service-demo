@@ -4,13 +4,13 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <script src="Scripts/jquery-1.11.0.min.js" type="text/javascript"></script>
+    <script src="Scripts/jquery-3.3.1.min.js" type="text/javascript"></script>
     <script src="Scripts/jquery.easing.1.3.js" type="text/javascript"></script>
-    <script src="Scripts/jquery-ui-1.10.4.min.js" type="text/javascript"></script>
+    <script src="Scripts/jquery-ui-1.12.1.min.js" type="text/javascript"></script>
     <script src="Scripts/raphael-min.js" type="text/javascript"></script>
     <script src="Scripts/clipboard.min.js" type="text/javascript"></script>
     <script src="Scripts/atalaWebDocumentViewer.js" type="text/javascript"></script>
-	<link href="Content/themes/base/minified/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+	<link href="Content/themes/base/jquery-ui.min.css" rel="stylesheet" type="text/css" />
 	<link href="Scripts/atalaWebDocumentViewer.css" rel="stylesheet" type="text/css" />
     <script src="Scripts/atalaWebCapture.js" type="text/javascript"></script>
     <script src="WebCaptureDemoResources/Scripts/Initialization.js" type="text/javascript"></script>
