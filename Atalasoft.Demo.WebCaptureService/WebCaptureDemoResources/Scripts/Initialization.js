@@ -48,8 +48,8 @@ function InitializeWebScanning() {
         },
         scanningOptions: {
             applyVRS: true, // turn on VRS
-            duplex: 1, // double-sided scanning
-            resultPixelType: 0, //  -- VRS
+            duplex: Atalasoft.Controls.Capture.ScanMode.Duplex, // double-sided scanning
+            resultPixelType: Atalasoft.Controls.Capture.PixelType.BW, //  -- VRS
             suppressBackgroundColor: true, // if image has solid background color, treat that as 'white' -- VRS
             discardBlankPages: true, // just what it says. Most useful when scanning duplex with some blank backs. -- VRS
             tiff: { jpegCompression: true} // if you are saving to TIFF and might be saving color, this shrinks the files *a lot* 
