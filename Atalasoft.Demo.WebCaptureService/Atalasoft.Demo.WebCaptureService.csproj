@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -32,6 +33,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <TypeScriptToolsVersion>3.8</TypeScriptToolsVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -55,35 +57,35 @@
     <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Atalasoft.dotImage, Version=11.0.0.418, Culture=neutral, PublicKeyToken=2b02b46f7326f73b, processorArchitecture=x86">
-      <HintPath>..\packages\Atalasoft.dotImage.x86.11.0.0.5418\lib\net452\Atalasoft.dotImage.dll</HintPath>
+    <Reference Include="Atalasoft.dotImage, Version=11.2.0.303, Culture=neutral, PublicKeyToken=2b02b46f7326f73b, processorArchitecture=x86">
+      <HintPath>..\packages\Atalasoft.dotImage.x86.11.2.0.2303\lib\net452\Atalasoft.dotImage.dll</HintPath>
     </Reference>
-    <Reference Include="Atalasoft.dotImage.AdvancedDocClean, Version=11.0.0.418, Culture=neutral, PublicKeyToken=2b02b46f7326f73b, processorArchitecture=x86">
-      <HintPath>..\packages\Atalasoft.dotImage.AdvancedDocClean.x86.11.0.0.5418\lib\net452\Atalasoft.dotImage.AdvancedDocClean.dll</HintPath>
+    <Reference Include="Atalasoft.dotImage.AdvancedDocClean, Version=11.2.0.303, Culture=neutral, PublicKeyToken=2b02b46f7326f73b, processorArchitecture=x86">
+      <HintPath>..\packages\Atalasoft.dotImage.AdvancedDocClean.x86.11.2.0.2303\lib\net452\Atalasoft.dotImage.AdvancedDocClean.dll</HintPath>
     </Reference>
-    <Reference Include="Atalasoft.dotImage.Lib, Version=11.0.0.418, Culture=neutral, PublicKeyToken=2b02b46f7326f73b, processorArchitecture=x86">
-      <HintPath>..\packages\Atalasoft.dotImage.Lib.x86.11.0.0.5418\lib\net452\Atalasoft.dotImage.Lib.dll</HintPath>
+    <Reference Include="Atalasoft.dotImage.Lib, Version=11.2.0.303, Culture=neutral, PublicKeyToken=2b02b46f7326f73b, processorArchitecture=x86">
+      <HintPath>..\packages\Atalasoft.dotImage.Lib.x86.11.2.0.2303\lib\net452\Atalasoft.dotImage.Lib.dll</HintPath>
     </Reference>
-    <Reference Include="Atalasoft.dotImage.Ocr, Version=11.0.0.418, Culture=neutral, PublicKeyToken=2b02b46f7326f73b, processorArchitecture=x86">
-      <HintPath>..\packages\Atalasoft.dotImage.Ocr.x86.11.0.0.5418\lib\net452\Atalasoft.dotImage.Ocr.dll</HintPath>
+    <Reference Include="Atalasoft.dotImage.Ocr, Version=11.2.0.303, Culture=neutral, PublicKeyToken=2b02b46f7326f73b, processorArchitecture=x86">
+      <HintPath>..\packages\Atalasoft.dotImage.Ocr.x86.11.2.0.2303\lib\net452\Atalasoft.dotImage.Ocr.dll</HintPath>
     </Reference>
-    <Reference Include="Atalasoft.dotImage.Pdf, Version=11.0.0.418, Culture=neutral, PublicKeyToken=2b02b46f7326f73b, processorArchitecture=x86">
-      <HintPath>..\packages\Atalasoft.dotImage.Pdf.x86.11.0.0.5418\lib\net452\Atalasoft.dotImage.Pdf.dll</HintPath>
+    <Reference Include="Atalasoft.dotImage.Pdf, Version=11.2.0.303, Culture=neutral, PublicKeyToken=2b02b46f7326f73b, processorArchitecture=x86">
+      <HintPath>..\packages\Atalasoft.dotImage.Pdf.x86.11.2.0.2303\lib\net452\Atalasoft.dotImage.Pdf.dll</HintPath>
     </Reference>
-    <Reference Include="Atalasoft.dotImage.PdfDoc.Bridge, Version=11.0.0.418, Culture=neutral, PublicKeyToken=2b02b46f7326f73b, processorArchitecture=x86">
-      <HintPath>..\packages\Atalasoft.dotImage.PdfDoc.Bridge.x86.11.0.0.5418\lib\net452\Atalasoft.dotImage.PdfDoc.Bridge.dll</HintPath>
+    <Reference Include="Atalasoft.dotImage.PdfDoc.Bridge, Version=11.2.0.303, Culture=neutral, PublicKeyToken=2b02b46f7326f73b, processorArchitecture=x86">
+      <HintPath>..\packages\Atalasoft.dotImage.PdfDoc.Bridge.x86.11.2.0.2303\lib\net452\Atalasoft.dotImage.PdfDoc.Bridge.dll</HintPath>
     </Reference>
-    <Reference Include="Atalasoft.dotImage.PdfReader, Version=11.0.0.418, Culture=neutral, PublicKeyToken=2b02b46f7326f73b, processorArchitecture=x86">
-      <HintPath>..\packages\Atalasoft.dotImage.PdfReader.x86.11.0.0.5418\lib\net452\Atalasoft.dotImage.PdfReader.dll</HintPath>
+    <Reference Include="Atalasoft.dotImage.PdfReader, Version=11.2.0.303, Culture=neutral, PublicKeyToken=2b02b46f7326f73b, processorArchitecture=x86">
+      <HintPath>..\packages\Atalasoft.dotImage.PdfReader.x86.11.2.0.2303\lib\net452\Atalasoft.dotImage.PdfReader.dll</HintPath>
     </Reference>
-    <Reference Include="Atalasoft.dotImage.WebControls, Version=11.0.0.418, Culture=neutral, PublicKeyToken=2b02b46f7326f73b, processorArchitecture=x86">
-      <HintPath>..\packages\Atalasoft.dotImage.WebControls.x86.11.0.0.5418\lib\net452\Atalasoft.dotImage.WebControls.dll</HintPath>
+    <Reference Include="Atalasoft.dotImage.WebControls, Version=11.2.0.303, Culture=neutral, PublicKeyToken=2b02b46f7326f73b, processorArchitecture=x86">
+      <HintPath>..\packages\Atalasoft.dotImage.WebControls.x86.11.2.0.2303\lib\net452\Atalasoft.dotImage.WebControls.dll</HintPath>
     </Reference>
-    <Reference Include="Atalasoft.PdfDoc, Version=11.0.0.418, Culture=neutral, PublicKeyToken=2b02b46f7326f73b, processorArchitecture=MSIL">
-      <HintPath>..\packages\Atalasoft.PdfDoc.x86.11.0.0.5418\lib\net452\Atalasoft.PdfDoc.dll</HintPath>
+    <Reference Include="Atalasoft.PdfDoc, Version=11.2.0.303, Culture=neutral, PublicKeyToken=2b02b46f7326f73b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Atalasoft.PdfDoc.x86.11.2.0.2303\lib\net452\Atalasoft.PdfDoc.dll</HintPath>
     </Reference>
-    <Reference Include="Atalasoft.Shared, Version=11.0.0.418, Culture=neutral, PublicKeyToken=2b02b46f7326f73b, processorArchitecture=MSIL">
-      <HintPath>..\packages\Atalasoft.Shared.11.0.0.5418\lib\net452\Atalasoft.Shared.dll</HintPath>
+    <Reference Include="Atalasoft.Shared, Version=11.2.0.303, Culture=neutral, PublicKeyToken=2b02b46f7326f73b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Atalasoft.Shared.11.2.0.2303\lib\net452\Atalasoft.Shared.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -103,7 +105,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="atala-capture-upload\Upload Folder - Do Not Delete.txt" />
-    <Content Include="Content\themes\base\images\animated-overlay.gif" />
+    <Content Include="Content\themes\base\accordion.css" />
+    <Content Include="Content\themes\base\all.css" />
+    <Content Include="Content\themes\base\autocomplete.css" />
+    <Content Include="Content\themes\base\base.css" />
+    <Content Include="Content\themes\base\button.css" />
+    <Content Include="Content\themes\base\core.css" />
+    <Content Include="Content\themes\base\datepicker.css" />
+    <Content Include="Content\themes\base\dialog.css" />
+    <Content Include="Content\themes\base\draggable.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -114,57 +124,28 @@
     <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
     <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
     <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_444444_256x240.png" />
     <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_555555_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_777620_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_777777_256x240.png" />
     <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cc0000_256x240.png" />
     <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_ffffff_256x240.png" />
     <Content Include="Content\themes\base\jquery-ui.css" />
-    <Content Include="Content\themes\base\jquery.ui.accordion.css" />
-    <Content Include="Content\themes\base\jquery.ui.all.css" />
-    <Content Include="Content\themes\base\jquery.ui.autocomplete.css" />
-    <Content Include="Content\themes\base\jquery.ui.base.css" />
-    <Content Include="Content\themes\base\jquery.ui.button.css" />
-    <Content Include="Content\themes\base\jquery.ui.core.css" />
-    <Content Include="Content\themes\base\jquery.ui.datepicker.css" />
-    <Content Include="Content\themes\base\jquery.ui.dialog.css" />
-    <Content Include="Content\themes\base\jquery.ui.menu.css" />
-    <Content Include="Content\themes\base\jquery.ui.progressbar.css" />
-    <Content Include="Content\themes\base\jquery.ui.resizable.css" />
-    <Content Include="Content\themes\base\jquery.ui.selectable.css" />
-    <Content Include="Content\themes\base\jquery.ui.slider.css" />
-    <Content Include="Content\themes\base\jquery.ui.spinner.css" />
-    <Content Include="Content\themes\base\jquery.ui.tabs.css" />
-    <Content Include="Content\themes\base\jquery.ui.theme.css" />
-    <Content Include="Content\themes\base\jquery.ui.tooltip.css" />
-    <Content Include="Content\themes\base\minified\images\animated-overlay.gif" />
-    <Content Include="Content\themes\base\minified\images\ui-bg_flat_0_aaaaaa_40x100.png" />
-    <Content Include="Content\themes\base\minified\images\ui-bg_flat_75_ffffff_40x100.png" />
-    <Content Include="Content\themes\base\minified\images\ui-bg_glass_55_fbf9ee_1x400.png" />
-    <Content Include="Content\themes\base\minified\images\ui-bg_glass_65_ffffff_1x400.png" />
-    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_dadada_1x400.png" />
-    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_e6e6e6_1x400.png" />
-    <Content Include="Content\themes\base\minified\images\ui-bg_glass_95_fef1ec_1x400.png" />
-    <Content Include="Content\themes\base\minified\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
-    <Content Include="Content\themes\base\minified\images\ui-icons_222222_256x240.png" />
-    <Content Include="Content\themes\base\minified\images\ui-icons_2e83ff_256x240.png" />
-    <Content Include="Content\themes\base\minified\images\ui-icons_454545_256x240.png" />
-    <Content Include="Content\themes\base\minified\images\ui-icons_888888_256x240.png" />
-    <Content Include="Content\themes\base\minified\images\ui-icons_cd0a0a_256x240.png" />
-    <Content Include="Content\themes\base\minified\jquery-ui.min.css" />
-    <Content Include="Content\themes\base\minified\jquery.ui.accordion.min.css" />
-    <Content Include="Content\themes\base\minified\jquery.ui.autocomplete.min.css" />
-    <Content Include="Content\themes\base\minified\jquery.ui.button.min.css" />
-    <Content Include="Content\themes\base\minified\jquery.ui.core.min.css" />
-    <Content Include="Content\themes\base\minified\jquery.ui.datepicker.min.css" />
-    <Content Include="Content\themes\base\minified\jquery.ui.dialog.min.css" />
-    <Content Include="Content\themes\base\minified\jquery.ui.menu.min.css" />
-    <Content Include="Content\themes\base\minified\jquery.ui.progressbar.min.css" />
-    <Content Include="Content\themes\base\minified\jquery.ui.resizable.min.css" />
-    <Content Include="Content\themes\base\minified\jquery.ui.selectable.min.css" />
-    <Content Include="Content\themes\base\minified\jquery.ui.slider.min.css" />
-    <Content Include="Content\themes\base\minified\jquery.ui.spinner.min.css" />
-    <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
-    <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
-    <Content Include="Content\themes\base\minified\jquery.ui.tooltip.min.css" />
+    <Content Include="Content\themes\base\jquery-ui.min.css" />
+    <Content Include="Content\themes\base\menu.css" />
+    <Content Include="Content\themes\base\progressbar.css" />
+    <Content Include="Content\themes\base\resizable.css" />
+    <Content Include="Content\themes\base\selectable.css" />
+    <Content Include="Content\themes\base\selectmenu.css" />
+    <Content Include="Content\themes\base\slider.css" />
+    <Content Include="Content\themes\base\sortable.css" />
+    <Content Include="Content\themes\base\spinner.css" />
+    <Content Include="Content\themes\base\tabs.css" />
+    <Content Include="Content\themes\base\theme.css" />
+    <Content Include="Content\themes\base\tooltip.css" />
     <Content Include="Default.aspx" />
     <Content Include="key.snk" />
     <None Include="Scripts\jquery-1.11.0.intellisense.js" />
@@ -172,12 +153,16 @@
     <Content Include="Scripts\atalaWebDocumentViewer.css" />
     <Content Include="Scripts\atalaWebDocumentViewer.js" />
     <Content Include="Scripts\clipboard.min.js" />
+    <Content Include="Scripts\images\atala-ui-dragdropfile.png" />
     <Content Include="Scripts\images\atala-ui-icons-16.png" />
     <Content Include="Scripts\images\atala-ui-spinner.gif" />
-    <Content Include="Scripts\jquery-1.11.0.js" />
-    <Content Include="Scripts\jquery-1.11.0.min.js" />
-    <Content Include="Scripts\jquery-ui-1.10.4.js" />
-    <Content Include="Scripts\jquery-ui-1.10.4.min.js" />
+    <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.4.1.js" />
+    <Content Include="Scripts\jquery-3.4.1.min.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
+    <Content Include="Scripts\jquery-ui-1.12.1.js" />
+    <Content Include="Scripts\jquery-ui-1.12.1.min.js" />
     <Content Include="Scripts\jquery.easing.1.3.js" />
     <Content Include="Scripts\raphael-min.js" />
     <Content Include="Scripts\raphael.js" />
@@ -203,7 +188,10 @@
       <DependentUpon>Web.config</DependentUpon>
     </Content>
     <Content Include="WebCaptureDemoResources\Styling.css" />
+    <Content Include="Scripts\Kofax.WebCapture.macOS.pkg" />
     <Content Include="Scripts\Kofax.WebCapture.Installer.msi" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Default.aspx.cs">
@@ -221,7 +209,9 @@
       <DependentUpon>WDVHandler.ashx</DependentUpon>
     </Compile>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <TypeScriptCompile Include="Scripts\atalaWebDocumentViewer.d.ts" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="Handlers\ScanningHandler.ashx" />
   </ItemGroup>
@@ -230,7 +220,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <Content Include="Scripts\jquery-1.11.0.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -243,6 +235,7 @@
     <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
   <ProjectExtensions>
@@ -264,29 +257,29 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
-  <Import Project="..\packages\Atalasoft.dotImage.Lib.x86.11.0.0.5418\build\Atalasoft.dotImage.Lib.x86.targets" Condition="Exists('..\packages\Atalasoft.dotImage.Lib.x86.11.0.0.5418\build\Atalasoft.dotImage.Lib.x86.targets')" />
+  <Import Project="..\packages\Atalasoft.dotImage.Lib.x86.11.2.0.2303\build\Atalasoft.dotImage.Lib.x86.targets" Condition="Exists('..\packages\Atalasoft.dotImage.Lib.x86.11.2.0.2303\build\Atalasoft.dotImage.Lib.x86.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\packages\Atalasoft.dotImage.Lib.x86.11.0.0.5418\build\Atalasoft.dotImage.Lib.x86.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Atalasoft.dotImage.Lib.x86.11.0.0.5418\build\Atalasoft.dotImage.Lib.x86.targets'))" />
-    <Error Condition="!Exists('..\packages\Atalasoft.dotImage.x86.11.0.0.5418\build\Atalasoft.dotImage.x86.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Atalasoft.dotImage.x86.11.0.0.5418\build\Atalasoft.dotImage.x86.targets'))" />
-    <Error Condition="!Exists('..\packages\Atalasoft.dotImage.AdvancedDocClean.x86.11.0.0.5418\build\Atalasoft.dotImage.AdvancedDocClean.x86.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Atalasoft.dotImage.AdvancedDocClean.x86.11.0.0.5418\build\Atalasoft.dotImage.AdvancedDocClean.x86.targets'))" />
-    <Error Condition="!Exists('..\packages\Atalasoft.dotImage.PdfReader.x86.11.0.0.5418\build\Atalasoft.dotImage.PdfReader.x86.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Atalasoft.dotImage.PdfReader.x86.11.0.0.5418\build\Atalasoft.dotImage.PdfReader.x86.targets'))" />
-    <Error Condition="!Exists('..\packages\Atalasoft.PdfDoc.x86.11.0.0.5418\build\Atalasoft.PdfDoc.x86.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Atalasoft.PdfDoc.x86.11.0.0.5418\build\Atalasoft.PdfDoc.x86.targets'))" />
-    <Error Condition="!Exists('..\packages\Atalasoft.dotImage.Ocr.x86.11.0.0.5418\build\Atalasoft.dotImage.Ocr.x86.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Atalasoft.dotImage.Ocr.x86.11.0.0.5418\build\Atalasoft.dotImage.Ocr.x86.targets'))" />
-    <Error Condition="!Exists('..\packages\Atalasoft.dotImage.Pdf.x86.11.0.0.5418\build\Atalasoft.dotImage.Pdf.x86.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Atalasoft.dotImage.Pdf.x86.11.0.0.5418\build\Atalasoft.dotImage.Pdf.x86.targets'))" />
-    <Error Condition="!Exists('..\packages\Atalasoft.dotImage.PdfDoc.Bridge.x86.11.0.0.5418\build\Atalasoft.dotImage.PdfDoc.Bridge.x86.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Atalasoft.dotImage.PdfDoc.Bridge.x86.11.0.0.5418\build\Atalasoft.dotImage.PdfDoc.Bridge.x86.targets'))" />
-    <Error Condition="!Exists('..\packages\Atalasoft.dotImage.WebControls.x86.11.0.0.5418\build\Atalasoft.dotImage.WebControls.x86.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Atalasoft.dotImage.WebControls.x86.11.0.0.5418\build\Atalasoft.dotImage.WebControls.x86.targets'))" />
+    <Error Condition="!Exists('..\packages\Atalasoft.dotImage.Lib.x86.11.2.0.2303\build\Atalasoft.dotImage.Lib.x86.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Atalasoft.dotImage.Lib.x86.11.2.0.2303\build\Atalasoft.dotImage.Lib.x86.targets'))" />
+    <Error Condition="!Exists('..\packages\Atalasoft.dotImage.x86.11.2.0.2303\build\Atalasoft.dotImage.x86.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Atalasoft.dotImage.x86.11.2.0.2303\build\Atalasoft.dotImage.x86.targets'))" />
+    <Error Condition="!Exists('..\packages\Atalasoft.dotImage.AdvancedDocClean.x86.11.2.0.2303\build\Atalasoft.dotImage.AdvancedDocClean.x86.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Atalasoft.dotImage.AdvancedDocClean.x86.11.2.0.2303\build\Atalasoft.dotImage.AdvancedDocClean.x86.targets'))" />
+    <Error Condition="!Exists('..\packages\Atalasoft.dotImage.PdfReader.x86.11.2.0.2303\build\Atalasoft.dotImage.PdfReader.x86.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Atalasoft.dotImage.PdfReader.x86.11.2.0.2303\build\Atalasoft.dotImage.PdfReader.x86.targets'))" />
+    <Error Condition="!Exists('..\packages\Atalasoft.PdfDoc.x86.11.2.0.2303\build\Atalasoft.PdfDoc.x86.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Atalasoft.PdfDoc.x86.11.2.0.2303\build\Atalasoft.PdfDoc.x86.targets'))" />
+    <Error Condition="!Exists('..\packages\Atalasoft.dotImage.Ocr.x86.11.2.0.2303\build\Atalasoft.dotImage.Ocr.x86.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Atalasoft.dotImage.Ocr.x86.11.2.0.2303\build\Atalasoft.dotImage.Ocr.x86.targets'))" />
+    <Error Condition="!Exists('..\packages\Atalasoft.dotImage.Pdf.x86.11.2.0.2303\build\Atalasoft.dotImage.Pdf.x86.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Atalasoft.dotImage.Pdf.x86.11.2.0.2303\build\Atalasoft.dotImage.Pdf.x86.targets'))" />
+    <Error Condition="!Exists('..\packages\Atalasoft.dotImage.PdfDoc.Bridge.x86.11.2.0.2303\build\Atalasoft.dotImage.PdfDoc.Bridge.x86.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Atalasoft.dotImage.PdfDoc.Bridge.x86.11.2.0.2303\build\Atalasoft.dotImage.PdfDoc.Bridge.x86.targets'))" />
+    <Error Condition="!Exists('..\packages\Atalasoft.dotImage.WebControls.x86.11.2.0.2303\build\Atalasoft.dotImage.WebControls.x86.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Atalasoft.dotImage.WebControls.x86.11.2.0.2303\build\Atalasoft.dotImage.WebControls.x86.targets'))" />
   </Target>
-  <Import Project="..\packages\Atalasoft.dotImage.x86.11.0.0.5418\build\Atalasoft.dotImage.x86.targets" Condition="Exists('..\packages\Atalasoft.dotImage.x86.11.0.0.5418\build\Atalasoft.dotImage.x86.targets')" />
-  <Import Project="..\packages\Atalasoft.dotImage.AdvancedDocClean.x86.11.0.0.5418\build\Atalasoft.dotImage.AdvancedDocClean.x86.targets" Condition="Exists('..\packages\Atalasoft.dotImage.AdvancedDocClean.x86.11.0.0.5418\build\Atalasoft.dotImage.AdvancedDocClean.x86.targets')" />
-  <Import Project="..\packages\Atalasoft.dotImage.PdfReader.x86.11.0.0.5418\build\Atalasoft.dotImage.PdfReader.x86.targets" Condition="Exists('..\packages\Atalasoft.dotImage.PdfReader.x86.11.0.0.5418\build\Atalasoft.dotImage.PdfReader.x86.targets')" />
-  <Import Project="..\packages\Atalasoft.PdfDoc.x86.11.0.0.5418\build\Atalasoft.PdfDoc.x86.targets" Condition="Exists('..\packages\Atalasoft.PdfDoc.x86.11.0.0.5418\build\Atalasoft.PdfDoc.x86.targets')" />
-  <Import Project="..\packages\Atalasoft.dotImage.Ocr.x86.11.0.0.5418\build\Atalasoft.dotImage.Ocr.x86.targets" Condition="Exists('..\packages\Atalasoft.dotImage.Ocr.x86.11.0.0.5418\build\Atalasoft.dotImage.Ocr.x86.targets')" />
-  <Import Project="..\packages\Atalasoft.dotImage.Pdf.x86.11.0.0.5418\build\Atalasoft.dotImage.Pdf.x86.targets" Condition="Exists('..\packages\Atalasoft.dotImage.Pdf.x86.11.0.0.5418\build\Atalasoft.dotImage.Pdf.x86.targets')" />
-  <Import Project="..\packages\Atalasoft.dotImage.PdfDoc.Bridge.x86.11.0.0.5418\build\Atalasoft.dotImage.PdfDoc.Bridge.x86.targets" Condition="Exists('..\packages\Atalasoft.dotImage.PdfDoc.Bridge.x86.11.0.0.5418\build\Atalasoft.dotImage.PdfDoc.Bridge.x86.targets')" />
-  <Import Project="..\packages\Atalasoft.dotImage.WebControls.x86.11.0.0.5418\build\Atalasoft.dotImage.WebControls.x86.targets" Condition="Exists('..\packages\Atalasoft.dotImage.WebControls.x86.11.0.0.5418\build\Atalasoft.dotImage.WebControls.x86.targets')" />
+  <Import Project="..\packages\Atalasoft.dotImage.x86.11.2.0.2303\build\Atalasoft.dotImage.x86.targets" Condition="Exists('..\packages\Atalasoft.dotImage.x86.11.2.0.2303\build\Atalasoft.dotImage.x86.targets')" />
+  <Import Project="..\packages\Atalasoft.dotImage.AdvancedDocClean.x86.11.2.0.2303\build\Atalasoft.dotImage.AdvancedDocClean.x86.targets" Condition="Exists('..\packages\Atalasoft.dotImage.AdvancedDocClean.x86.11.2.0.2303\build\Atalasoft.dotImage.AdvancedDocClean.x86.targets')" />
+  <Import Project="..\packages\Atalasoft.dotImage.PdfReader.x86.11.2.0.2303\build\Atalasoft.dotImage.PdfReader.x86.targets" Condition="Exists('..\packages\Atalasoft.dotImage.PdfReader.x86.11.2.0.2303\build\Atalasoft.dotImage.PdfReader.x86.targets')" />
+  <Import Project="..\packages\Atalasoft.PdfDoc.x86.11.2.0.2303\build\Atalasoft.PdfDoc.x86.targets" Condition="Exists('..\packages\Atalasoft.PdfDoc.x86.11.2.0.2303\build\Atalasoft.PdfDoc.x86.targets')" />
+  <Import Project="..\packages\Atalasoft.dotImage.Ocr.x86.11.2.0.2303\build\Atalasoft.dotImage.Ocr.x86.targets" Condition="Exists('..\packages\Atalasoft.dotImage.Ocr.x86.11.2.0.2303\build\Atalasoft.dotImage.Ocr.x86.targets')" />
+  <Import Project="..\packages\Atalasoft.dotImage.Pdf.x86.11.2.0.2303\build\Atalasoft.dotImage.Pdf.x86.targets" Condition="Exists('..\packages\Atalasoft.dotImage.Pdf.x86.11.2.0.2303\build\Atalasoft.dotImage.Pdf.x86.targets')" />
+  <Import Project="..\packages\Atalasoft.dotImage.PdfDoc.Bridge.x86.11.2.0.2303\build\Atalasoft.dotImage.PdfDoc.Bridge.x86.targets" Condition="Exists('..\packages\Atalasoft.dotImage.PdfDoc.Bridge.x86.11.2.0.2303\build\Atalasoft.dotImage.PdfDoc.Bridge.x86.targets')" />
+  <Import Project="..\packages\Atalasoft.dotImage.WebControls.x86.11.2.0.2303\build\Atalasoft.dotImage.WebControls.x86.targets" Condition="Exists('..\packages\Atalasoft.dotImage.WebControls.x86.11.2.0.2303\build\Atalasoft.dotImage.WebControls.x86.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

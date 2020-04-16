@@ -9,10 +9,7 @@ $(function () {
 
         AddCustomToolbar();
         AddStatusToolbar();
-
         InitializeWebScanning();
-
-        ModifyViewer();
     }
     catch (error) {
         AppendStatus(error);
@@ -24,6 +21,7 @@ function InitializeWebDocumentViewer() {
         parent: $('.atala-document-container'),
         toolbarparent: $('.atala-document-toolbar'),
         serverurl: 'Handlers/WDVHandler.ashx',
+        showbuttontext: false,
     });
 }
 

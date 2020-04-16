@@ -115,6 +115,7 @@ section ul li.right {
     background-image: url('icons/scanner.png');
     background-repeat: no-repeat;
     vertical-align: top;
+    background-position: center;
 }
 
 .ui-state-default .atala-ui-icon-select {
@@ -125,17 +126,24 @@ section ul li.right {
     background-image: url('icons/select.png');
     background-repeat: no-repeat;
     vertical-align: top;
+    background-position: center;
 }
 
 .ui-state-default .atala-ui-icon-VRS {
-    background-image: url('icons/vrs16.png');
+    /*background-image: url('icons/vrs16.png');*/
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .atala-VRS-button {
     background-image: url('icons/vrs16.png');
     background-repeat: no-repeat;
     vertical-align: top;
+    background-position: center;
+}
+
+.ui-button:hover, .ui-button:focus {
+    background-repeat: no-repeat;
 }
 
 .WebCaptureToolbar {
@@ -164,19 +172,6 @@ section ul li.right {
     background-image: url('open.png');
 }
 
-#FileToUpload {
-    top: -5px;
-    opacity: 0;
-    filter: alpha(opacity=1);
-    left: -28px;
-}
-
-#ButtonUpload {
-    left: -50px;
-    width: 1px;
-    height: 1px;
-    visibility: hidden;
-}
 
 .loadingGif {
     position: absolute;

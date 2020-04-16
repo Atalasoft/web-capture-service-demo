@@ -4,18 +4,19 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <script src="Scripts/jquery-1.11.0.min.js" type="text/javascript"></script>
-    <script src="Scripts/jquery.easing.1.3.js" type="text/javascript"></script>
-    <script src="Scripts/jquery-ui-1.10.4.min.js" type="text/javascript"></script>
+    <script src="Scripts/jquery-3.4.1.min.js" type="text/javascript"></script>
+    <script src="Scripts/jquery-ui-1.12.1.min.js" type="text/javascript"></script>
     <script src="Scripts/raphael-min.js" type="text/javascript"></script>
     <script src="Scripts/clipboard.min.js" type="text/javascript"></script>
     <script src="Scripts/atalaWebDocumentViewer.js" type="text/javascript"></script>
-	<link href="Content/themes/base/minified/jquery-ui.min.css" rel="stylesheet" type="text/css" />
-	<link href="Scripts/atalaWebDocumentViewer.css" rel="stylesheet" type="text/css" />
     <script src="Scripts/atalaWebCapture.js" type="text/javascript"></script>
+    
     <script src="WebCaptureDemoResources/Scripts/Initialization.js" type="text/javascript"></script>
     <script src="WebCaptureDemoResources/Scripts/ErrorsAndEvents.js" type="text/javascript"></script>
     <script src="WebCaptureDemoResources/Scripts/Customization.js" type="text/javascript"></script>
+    
+    <link href="Content/themes/base/jquery-ui.min.css" rel="stylesheet" type="text/css"/>
+    <link href="Scripts/atalaWebDocumentViewer.css" rel="stylesheet" type="text/css" />
     <link href="WebCaptureDemoResources/Styling.css" rel="stylesheet" type="text/css" />
     <!--[if lte IE 8]>
 <script src="WebCaptureDemoResources/Scripts/html5.js" type="text/javascript"></script>
@@ -50,7 +51,7 @@
             </select>
         </p>
         <p>
-            <input type="button" title="Close" id="CloseButton" value="Close" onclick="ScannerDialogClick();" style="float: right;">
+            <input type="button" title="Close" id="CloseButton" value="Close" onclick="ScannerDialogClick();" style="float: right;"/>
         </p>
     </div>
     <div class="atala-prompt-message" style="position: absolute; left: 40%; top: 40%;
