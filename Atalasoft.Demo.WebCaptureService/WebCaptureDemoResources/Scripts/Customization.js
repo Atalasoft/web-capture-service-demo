@@ -84,9 +84,3 @@ function CreateVRSToggleButton() {
     return vrsButton;
 }
 
-function ModifyViewer() {
-
-    $('.atala-ui-button .ui-button-text').html('');
-    $('.atala-ui-button').css({ height: '24px', width: '24px' });
-}
-
