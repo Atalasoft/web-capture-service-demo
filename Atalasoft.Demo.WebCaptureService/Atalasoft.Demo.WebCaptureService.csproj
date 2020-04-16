@@ -210,9 +210,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="Scripts\atalaWebDocumentViewer.d.ts" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Handlers\ScanningHandler.ashx" />
   </ItemGroup>
   <ItemGroup>
