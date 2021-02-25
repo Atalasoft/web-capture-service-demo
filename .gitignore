@@ -286,3 +286,5 @@ __pycache__/
 *.btm.cs
 *.odx.cs
 *.xsd.cs
+/Atalasoft.Demo.WebCaptureService/atala-capture-upload/b6ef672d-c64c-4752-9f36-574a122e576a.tif
+/Atalasoft.Demo.WebCaptureService/Scripts/atalaWebDocumentViewer.d.ts
