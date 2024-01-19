@@ -116,6 +116,7 @@ section ul li.right {
     background-repeat: no-repeat;
     vertical-align: top;
     background-position: center;
+    height: 24px;
 }
 
 .ui-state-default .atala-ui-icon-select {
@@ -127,6 +128,7 @@ section ul li.right {
     background-repeat: no-repeat;
     vertical-align: top;
     background-position: center;
+    height: 24px;
 }
 
 .ui-state-default .atala-ui-icon-VRS {
@@ -140,6 +142,7 @@ section ul li.right {
     background-repeat: no-repeat;
     vertical-align: top;
     background-position: center;
+    height: 24px;
 }
 
 .ui-button:hover, .ui-button:focus {
