@@ -48,6 +48,7 @@ namespace Atalasoft.Demo.WebCaptureService.Handlers
                 }
                 catch (Exception)
                 {
+                    // ignored
                 }
             }
 
