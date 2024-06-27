@@ -9,7 +9,9 @@ namespace Atalasoft.Demo.WebCaptureService.Handlers
     {
         static WDVHandler()
         {
-            AtalaLicense.SetAssemblyLicense(HttpUtility.HtmlDecode(ConfigurationManager.AppSettings["AtalasoftLicenseString"]));
+            var value = ConfigurationManager.AppSettings["AtalasoftLicenseString"];
+            if (!string.IsNullOrEmpty(value))
+                AtalaLicense.SetAssemblyLicense(HttpUtility.HtmlDecode(value));
         }
     }
 }
